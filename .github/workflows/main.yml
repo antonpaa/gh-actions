@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Hello world action
+    name: CI
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
