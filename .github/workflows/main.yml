@@ -1,12 +1,18 @@
-name: A workflow for my Hello World file
-on: push
+# This workflow acts as a placeholder for the CI actions to be implemented
+
+name: Default CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
-    name: Hello world action
+    name: CI
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ./action-a
+      - uses: ./.github/actions
         with:
-          MY_NAME: "Anton"
+          PROJECT_NAME: "TBA"
